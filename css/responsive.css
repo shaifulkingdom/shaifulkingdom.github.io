@@ -1,0 +1,297 @@
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    #header-part .header {
+        width: 100%;
+    }
+
+    #banner-part .banner .overlay {
+        width: 100%;
+    }
+
+    #banner-part .banner .overlay .left .github {
+        font-size: 0;
+        padding: 0;
+    }
+
+    #banner-part .banner .overlay .left .github i {
+        font-size: 25px;
+        padding: 3px 7px;
+        margin-right: 0;
+    }
+
+    #banner-part {
+        width: 100%;
+    }
+
+    nav .navbar-toggler-icon i {
+        color: #dba500;
+        
+    }
+
+    nav button{
+        z-index: 9999;
+        position: fixed;
+        top: 185px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 42px;
+        z-index: 99;
+        text-align: left;
+    }
+
+    nav ul a {
+        font-size: 11px;
+    }
+
+    #main {
+        width: 464px;
+        margin-left: 48px;
+        margin-top: 160px;
+    }
+
+    #main .about .article p {
+        width: 100%;
+    }
+
+    #main .about .details h5 span {
+        margin-left: 10px;
+    }
+
+    #main .about .interest .subinterest{
+        text-align: center;
+    }
+
+    #main .expertise .progress-title span{
+        display: none;
+    }
+
+    #main .works a .image {
+        height: 250px;
+    }
+
+    #main .offer .content {
+        border-bottom-left-radius: 0;
+        padding: 20px;
+        border-left: 0;
+    }
+
+    #main .offer .content1 {
+        border-bottom-left-radius: 40px !important;
+        border-left: 1px solid #daa520 !important;
+    }
+
+    #main .offer .content2 {
+        border-bottom-right-radius: 40px;
+        border-right: 1px solid #daa520;
+    }
+
+    #main .certificate .frame {
+        width: 200px;
+    }
+
+    #main .certificate .frame .img {
+        top: 32px;
+        left: 32px;
+        width: 136px;
+        height: 109px;
+    }
+
+    #main .certificate .tall {
+        height: 230px;
+    }
+
+    #main .certificate .frame .wd {
+        top: 42px;
+        width: 136px;
+        height: 146px;
+    }
+
+    #main .contact .imgbox img {
+        max-height: 80%;
+    }
+
+    #main .contact .imgbox::before {
+        transform: skewX(-10deg);
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer span {
+        line-height: 1;
+        position: static;
+        margin-left: 48px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    #header-part .header {
+        width: 100%;
+    }
+
+    #banner-part .banner .overlay {
+        width: 100%;
+    }
+
+    #banner-part .banner .overlay .left .github {
+        font-size: 0;
+        padding: 0;
+    }
+
+    #banner-part .banner .overlay .left .github i {
+        font-size: 25px;
+        padding: 3px 7px;
+        margin-right: 0;
+    }
+
+    #banner-part {
+        width: 100%;
+    }
+
+    nav .navbar-toggler-icon i {
+        color: #dba500;
+        
+    }
+
+    nav button{
+        z-index: 9999;
+        position: fixed;
+        top: 185px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 42px;
+        z-index: 99;
+        text-align: left;
+    }
+
+    nav ul a {
+        font-size: 11px;
+    }
+
+    #main {
+        width: 642px;
+        margin-left: 48px;
+        margin-top: 160px;
+    }
+
+    #main .about .article p {
+        width: 100%;
+    }
+
+    #main .about .details h5 span {
+        margin-left: 10px;
+    }
+
+    #main .about .interest .subinterest{
+        text-align: center;
+    }
+
+    #main .works a .image {
+        height: 250px;
+    }
+
+    #main .offer .content h2 {
+        font-size: 20px;
+    }
+
+    #main .certificate .frame {
+        width: 200px;
+    }
+
+    #main .certificate .frame .img {
+        top: 27px;
+        left: 27px;
+        width: 109px;
+        height: 87px;
+    }
+
+    #main .certificate .tall {
+        height: 230px;
+    }
+
+    #main .certificate .frame .wd {
+        top: 42px;
+        width: 110px;
+        height: 146px;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer span {
+        line-height: 1;
+        position: static;
+        margin-left: 48px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    nav ul {
+        position: fixed;
+        width: 90px;
+        z-index: 99;
+    }
+
+    nav ul li a:focus {
+        font-weight: 400;
+    }
+
+    #main .about .article p {
+        width: 100%;
+    }
+
+    #main .about .details h5 span {
+        margin-left: 10px;
+    }
+
+    #main .about .interest .subinterest{
+        text-align: center;
+    }
+
+    #main .works a .image {
+        height: 250px;
+    }
+
+    #main .offer .content h2 {
+        font-size: 20px;
+    }
+
+    #main .certificate .frame {
+        width: 200px;
+    }
+
+    #main .certificate .frame .img {
+        top: 31px;
+        left: 31px;
+        width: 127px;
+        height: 102px;
+    }
+
+    #main .certificate .tall {
+        height: 230px;
+    }
+
+    #main .certificate .frame .wd {
+        top: 42px;
+        width: 128px;
+        height: 146px;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer span {
+        line-height: 1;
+        position: static;
+        margin-left: 48px;
+    }
+}

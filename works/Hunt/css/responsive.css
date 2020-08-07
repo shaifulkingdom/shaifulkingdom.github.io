@@ -1,0 +1,566 @@
+@media (max-width: 575.98px) {
+
+    .navbar-toggler-icon {
+        color: #ffffff;
+    }
+
+    nav ul {
+        background: #353535;
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+
+    nav ul li a::after {
+        width: 10%;
+        height: 2px;
+        bottom: 20px;
+    }
+
+    #about-part .about .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #about-part .about .left {
+        width: 32%;
+        padding: 10px;
+        top: -40px;
+        left: 0px;
+    }
+
+    #about-part .about .left::after {
+        bottom: 90px;
+        right: -40px;
+    }
+
+    #about-part .about .down {
+        width: 50%;
+        padding: 10px;
+        bottom: -215px;
+        left: 140px;
+    }
+
+    #about-part .about .down::after {
+        bottom: 118%;
+        left: 48%;
+    }
+
+    #about-part .about .top {
+        width: 50%;
+        padding: 10px;
+        top: -225px;
+        left: 140px;
+    }
+
+    #about-part .about .top::after {
+        top: 122%;
+        left: 48%;
+    }
+
+    #about-part .about .right {
+        width: 32%;
+        padding: 10px;
+        top: -40px;
+        right: 0;
+    }
+
+    #about-part .about .right::after {
+        left: -22%;
+    }
+
+    #services-part .services .item .left {
+        width: 40%;
+    }
+
+    #services-part .services .item .middle {
+        width: 20%;
+    }
+
+    #services-part .services .item .right {
+        width: 40%;
+    }
+
+    #services-part .services .item .second-left p {
+        padding: 10px;
+        padding-right: 25px;
+        line-height: 1.5;
+    }
+
+    #services-part .services .item .second-left::before {
+        top: 112px;
+        right: -5px;
+    }
+
+    #services-part .services .item .text p {
+        padding: 10px;
+        padding-left: 25px;
+        line-height: 1.5;
+    }
+
+    #services-part .services .item .text::before {
+        bottom: 45%;
+        left: -10%;
+    }
+
+    #services-part .slick-center .img {
+        transform: scale(1.1);
+    }
+
+    #services-part .slick-list {
+        height: 900px !important;
+    }
+
+    #pricing-part .pricing .content {
+        margin-top: 30px;
+    }
+
+    #testi-part .one {
+        width: 30%;
+    }
+
+    #testi-part .two {
+        width: 70%;
+    }
+
+    #testi-part .overlay .sub .text h4 {
+        margin-top: 0;
+    }
+
+    #testi-part .overlay .sub .text p {
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+    #testi-part .overlay .sub .text {
+        padding: 10px;
+    }
+
+    #testi-part .overlay .sub::before {
+        bottom: 42%;
+    }
+
+    #team-part .team .left {
+        width: 50%;
+        margin-top: 10px
+    }
+
+    #team-part .team .right {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    #footer-part .footer .left {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    #footer-part .footer .right {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .navbar-toggler-icon {
+        color: #ffffff;
+    }
+
+    nav ul {
+        background: #353535;
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+
+    nav ul li a::after {
+        width: 10%;
+        height: 2px;
+        bottom: 20px;
+    }
+
+    #about-part .about .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #about-part .about .left {
+        width: 31%;
+        padding: 10px;
+        top: -45px;
+        left: 0px;
+    }
+
+    #about-part .about .left::after {
+        bottom: 93px;
+        right: -40px;
+    }
+
+    #about-part .about .text h2 {
+        margin-top: 0;
+    }
+
+    #about-part .about .down {
+        width: 50%;
+        padding: 10px;
+        bottom: -200px;
+        left: 130px;
+    }
+
+    #about-part .about .down::after {
+        bottom: 118%;
+        left: 48%;
+    }
+
+    #about-part .about .top {
+        width: 50%;
+        padding: 10px;
+        top: -215px;
+        left: 130px;
+    }
+
+    #about-part .about .top::after {
+        top: 127%;
+        left: 48%;
+    }
+
+    #about-part .about .right {
+        width: 31%;
+        padding: 10px;
+        top: -45px;
+        right: 0;
+    }
+
+    #about-part .about .right::after {
+        left: -23%;
+    }
+
+    #services-part .services .item .left {
+        width: 40%;
+    }
+
+    #services-part .services .item .middle {
+        width: 20%;
+    }
+
+    #services-part .services .item .right {
+        width: 40%;
+    }
+
+    #services-part .services .item .second-left p {
+        padding: 10px;
+        padding-right: 25px;
+        line-height: 1.5;
+    }
+
+    #services-part .services .item .second-left::before {
+        top: 110px;
+        right: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    #services-part .services .item .text p {
+        padding: 10px;
+        padding-left: 25px;
+        line-height: 1.5;
+    }
+
+    #services-part .services .item .text::before {
+        bottom: 47%;
+        left: -8%;
+        width: 35px;
+        height: 35px;
+    }
+
+    #services-part .slick-center .img {
+        transform: scale(1.1);
+    }
+
+    #services-part .slick-list {
+        height: 900px !important;
+    }
+
+    #pricing-part .pricing .content {
+        margin-top: 30px;
+    }
+
+    #testi-part .one {
+        width: 30%;
+    }
+
+    #testi-part .two {
+        width: 70%;
+    }
+
+    #testi-part .overlay .sub .text h4 {
+        margin-top: 0;
+    }
+
+    #testi-part .overlay .sub .text p {
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+    #testi-part .overlay .sub .text {
+        padding: 10px;
+    }
+
+    #testi-part .overlay .sub::before {
+        bottom: 45%;
+        left: -5%;
+    }
+
+    #team-part .team .left {
+        width: 50%;
+        margin-top: 10px
+    }
+
+    #team-part .team .right {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    #footer-part .footer .left {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    #footer-part .footer .right {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .navbar-toggler-icon {
+        color: #ffffff;
+    }
+
+    nav ul {
+        background: #353535;
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+
+    nav ul li a::after {
+        width: 10%;
+        height: 2px;
+        bottom: 20px;
+    }
+
+    #about-part .about .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #about-part .about .left {
+        width: 31%;
+        padding: 10px;
+        top: 25px;
+        left: 0px;
+    }
+
+    #about-part .about .left::after {
+        bottom: 70px;
+        right: -48px;
+    }
+
+    #about-part .about .text h2 {
+        margin-top: 0;
+    }
+
+    #about-part .about .down {
+        width: 50%;
+        padding: 10px;
+        bottom: -185px;
+        left: 180px;
+    }
+
+    #about-part .about .down::after {
+        bottom: 125%;
+        left: 47%;
+    }
+
+    #about-part .about .down::before {
+        bottom: 82%;
+    }
+
+    #about-part .about .top {
+        width: 50%;
+        padding: 10px;
+        top: -180px;
+        left: 175px;
+    }
+
+    #about-part .about .top::before {
+        top: 86%;
+    }
+
+    #about-part .about .top::after {
+        top: 123%;
+        left: 47%;
+    }
+
+    #about-part .about .right {
+        width: 31%;
+        padding: 10px;
+        top: 25px;
+        right: 0;
+    }
+
+    #about-part .about .right::after {
+        left: -22%;
+        bottom: 43%;
+    }
+
+    #services-part .services .item .left {
+        width: 40%;
+    }
+
+    #services-part .services .item .middle {
+        width: 20%;
+    }
+
+    #services-part .services .item .right {
+        width: 40%;
+    }
+
+    #services-part .services .item .second-left p {
+        padding: 10px;
+        padding-right: 25px;
+        line-height: 1.5;
+    }
+
+    #services-part .services .item .second-left::before {
+        top: 110px;
+        right: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    #services-part .services .item .text p {
+        padding: 10px;
+        padding-left: 25px;
+        line-height: 1.5;
+    }
+
+    #services-part .services .item .text::before {
+        bottom: 30%;
+        left: -6%;
+        width: 35px;
+        height: 35px;
+    }
+
+    #services-part .slick-center .img {
+        transform: scale(1.1);
+    }
+
+    #services-part .slick-list {
+        height: 900px !important;
+    }
+
+    #pricing-part .pricing .content {
+        margin-top: 30px;
+    }
+
+    #pricing-part .pricing .content .price .amount {
+        width: 65%;
+        top: -90px;
+    }
+
+    #testi-part .one {
+        width: 30%;
+    }
+
+    #testi-part .two {
+        width: 70%;
+    }
+
+    #testi-part .overlay .sub .text h4 {
+        margin-top: 0;
+    }
+
+    #testi-part .overlay .sub .text p {
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+    #testi-part .overlay .sub .text {
+        padding: 10px;
+    }
+
+    #testi-part .overlay .sub::before {
+        bottom: 35%;
+        left: -4%;
+    }
+
+    #team-part .team .left {
+        width: 50%;
+        margin-top: 10px
+    }
+
+    #team-part .team .right {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    #footer-part .footer .left {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    #footer-part .footer .right {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    #services-part .slick-list {
+        height: 830px !important;
+    }
+
+    #about-part .about .img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #about-part .about .left {
+        top: 45px;
+        left: 0px;
+    }
+
+    #about-part .about .left::after {
+        right: -44px;
+    }
+
+    #about-part .about .right {
+        top: 45px;
+        right: 0;
+    }
+
+    #about-part .about .right::after {
+        left: -15%;
+    }
+
+    #about-part .about .top {
+        top: -284px;
+        left: 327px;
+    }
+
+    #about-part .about .down {
+        bottom: -240px;
+        left: 330px;
+    }
+}
