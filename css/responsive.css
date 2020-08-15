@@ -23,32 +23,39 @@
         width: 100%;
     }
 
-    nav .navbar-toggler-icon i {
-        color: #dba500;
-        
+    #banner-part .banner .overlay .logo {
+        margin-left: 10px;
     }
 
-    nav button{
+    #banner-part .banner .overlay .left {
+        margin-left: 100px;
+    }
+
+    nav .navbar-toggler-icon i {
+        color: #dba500;
+
+    }
+
+    nav button {
         z-index: 9999;
         position: fixed;
-        top: 185px;
+        top: 125px;
     }
 
     nav ul {
         position: fixed;
-        width: 42px;
+        top: 170px;
         z-index: 99;
         text-align: left;
     }
 
     nav ul a {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     #main {
-        width: 464px;
-        margin-left: 48px;
-        margin-top: 160px;
+        width: 440px;
+        margin-left: 87px;
     }
 
     #main .about .article p {
@@ -59,11 +66,11 @@
         margin-left: 10px;
     }
 
-    #main .about .interest .subinterest{
+    #main .about .interest .subinterest {
         text-align: center;
     }
 
-    #main .expertise .progress-title span{
+    #main .expertise .progress-title span {
         display: none;
     }
 
@@ -108,22 +115,25 @@
         height: 146px;
     }
 
-    #main .contact .imgbox img {
-        max-height: 80%;
+    #main .contact .imgbox {
+        display: none;
     }
 
-    #main .contact .imgbox::before {
-        transform: skewX(-10deg);
+    footer {
+        text-align: left;
     }
 
-    footer{
-        text-align: center;
+    footer .container {
+        padding: 0;
     }
 
     footer span {
-        line-height: 1;
-        position: static;
-        margin-left: 48px;
+        width: 150px;
+        font-size: 12px;
+    }
+
+    footer span a {
+        font-size: 22px;
     }
 }
 
@@ -152,32 +162,39 @@
         width: 100%;
     }
 
-    nav .navbar-toggler-icon i {
-        color: #dba500;
-        
+    #banner-part .banner .overlay .logo {
+        margin-left: 10px;
     }
 
-    nav button{
+    #banner-part .banner .overlay .left {
+        margin-left: 100px;
+    }
+
+    nav .navbar-toggler-icon i {
+        color: #dba500;
+
+    }
+
+    nav button {
         z-index: 9999;
         position: fixed;
-        top: 185px;
+        top: 125px;
     }
 
     nav ul {
         position: fixed;
-        width: 42px;
+        top: 170px;
         z-index: 99;
         text-align: left;
     }
 
     nav ul a {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     #main {
-        width: 642px;
-        margin-left: 48px;
-        margin-top: 160px;
+        width: 620px;
+        margin-left: 87px;
     }
 
     #main .about .article p {
@@ -188,16 +205,16 @@
         margin-left: 10px;
     }
 
-    #main .about .interest .subinterest{
+    #main .about .interest .subinterest {
         text-align: center;
+    }
+
+    #main .expertise .progress-title span {
+        display: none;
     }
 
     #main .works a .image {
         height: 250px;
-    }
-
-    #main .offer .content h2 {
-        font-size: 20px;
     }
 
     #main .certificate .frame {
@@ -205,10 +222,10 @@
     }
 
     #main .certificate .frame .img {
-        top: 27px;
-        left: 27px;
-        width: 109px;
-        height: 87px;
+        top: 26px;
+        left: 26px;
+        width: 104px;
+        height: 83px;
     }
 
     #main .certificate .tall {
@@ -216,32 +233,51 @@
     }
 
     #main .certificate .frame .wd {
-        top: 42px;
-        width: 110px;
-        height: 146px;
+        top: 43px;
+        width: 104px;
+        height: 144px;
     }
 
-    footer{
-        text-align: center;
+    footer {
+        text-align: left;
+    }
+
+    footer .container {
+        padding: 0;
     }
 
     footer span {
-        line-height: 1;
-        position: static;
-        margin-left: 48px;
+        width: 151px;
+        font-size: 13px;
+    }
+
+    footer span a {
+        font-size: 24px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    #header-part .header {
+        width: 670px;
+    }
+
+    #banner-part .banner .overlay {
+        width: 670px;
+    }
 
     nav ul {
         position: fixed;
-        width: 90px;
+        top: 170px;
         z-index: 99;
+        text-align: left;
     }
 
-    nav ul li a:focus {
-        font-weight: 400;
+    nav ul a {
+        font-size: 15px;
+    }
+
+    #main {
+        width: 700px;
     }
 
     #main .about .article p {
@@ -252,16 +288,16 @@
         margin-left: 10px;
     }
 
-    #main .about .interest .subinterest{
+    #main .about .interest .subinterest {
         text-align: center;
     }
 
-    #main .works a .image {
-        height: 250px;
+    #main .expertise .progress-title span {
+        display: none;
     }
 
     #main .offer .content h2 {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     #main .certificate .frame {
@@ -269,10 +305,10 @@
     }
 
     #main .certificate .frame .img {
-        top: 31px;
-        left: 31px;
-        width: 127px;
-        height: 102px;
+        top: 30px;
+        left: 30px;
+        width: 123px;
+        height: 97px;
     }
 
     #main .certificate .tall {
@@ -280,18 +316,25 @@
     }
 
     #main .certificate .frame .wd {
-        top: 42px;
-        width: 128px;
-        height: 146px;
+        top: 43px;
+        width: 122px;
+        height: 144px;
     }
 
-    footer{
-        text-align: center;
+    footer {
+        text-align: left;
+    }
+
+    footer .container {
+        padding: 0;
     }
 
     footer span {
-        line-height: 1;
-        position: static;
-        margin-left: 48px;
+        width: 180px;
+        font-size: 14px;
+    }
+
+    footer span a {
+        font-size: 26px;
     }
 }

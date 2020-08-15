@@ -128,15 +128,13 @@ hr {
 =========================================================================================*/
 #banner-part {
     background: url(../images/body/body-text-dark.jpg) #242424;
-    border: 1px solid #0f0f0f;
+    border-bottom: 1px solid #0f0f0f;
     height: 50px !important;
     position: fixed;
-    width: 1035px;
+    width: 100%;
     top: 115px;
     left: 0;
     z-index: 99;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
 }
 
 #banner-part .banner {
@@ -253,7 +251,7 @@ nav ul li a:focus {
 =========================================================================================*/
 
 #main {
-    width: 720px;
+    width: 750px;
     padding: 30px 30px 50px 30px;
     margin: auto;
     margin-top: 160px;
@@ -293,6 +291,7 @@ nav ul li a:focus {
     font-size: 18px;
     font-weight: 400;
     color: brown;
+    cursor: pointer;
 }
 
 #main .about .details {
@@ -715,10 +714,10 @@ nav ul li a:focus {
 
 #main .certificate .frame .img {
     position: absolute;
-    top: 31px;
-    left: 31px;
-    width: 127px;
-    height: 102px;
+    top: 32px;
+    left: 32px;
+    width: 135px;
+    height: 108px;
 }
 
 #main .certificate .frame .wd {
