@@ -527,6 +527,11 @@ nav ul li a:focus {
     background-size: cover;
 }
 
+#main .works a .image.image3 {
+    background: url(../images/works/acg.png);
+    background-size: cover;
+}
+
 #main .works a .image.image4 {
     background: url(../images/works/Limolight.jpg);
     background-size: cover;
