@@ -85,6 +85,10 @@ nav {
     z-index: 9999;
 }
 
+nav .navbar-toggler {
+    outline: 0;
+}
+
 nav ul li {
     text-align: center;
     margin-left: 2px;
