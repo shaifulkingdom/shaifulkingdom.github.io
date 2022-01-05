@@ -30,93 +30,181 @@ a:focus {
     src: url(../css/Chomsky.otf)
 }
 
-body {
-    background: #1e1e1e;
+@font-face {
+    font-family: shaiful1;
+    src: url(../font/MonteCarlo-Regular.ttf);
+}
+
+@font-face {
+    font-family: shaiful2;
+    src: url(../font/Philosopher-Regular.ttf);
+}
+
+
+
+.color {
+    color: #fe3b3b;
 }
 
 .title h1 {
-    text-align: center;
-    font-family: 'Tangerine', cursive;
-    font-size: 50px;
-    font-weight: 400;
-    color: #997105;
-    text-transform: capitalize;
-    text-shadow: -3px 2px 0px #3333;
-}
-
-hr {
-    border: 0;
-    outline: none;
-    height: 11px;
-    background: transparent url("../images/body/hr.gif") center center repeat-x;
-    margin: 0 0 20px;
-}
-
-#main .about,
-#main .expertise,
-#main .offer,
-#main .testi {
+    position: relative;
     padding: 20px 0;
+    text-align: center;
+    font-family: 'shaiful1';
+    font-size: 48px;
+    font-weight: 600;
+    color: #fe3b3b;
+    text-transform: capitalize;
+    text-shadow: -3px 2px 0px #cccccc;
 }
+
+.title h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 260px;
+    bottom: 15px;
+    height: 2px;
+    transform: translateX(-50%);
+    background: #fe3b3b;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px #ccc;
+
+}
+
+/*=======================================================================================
+                                    nav-part start
+=========================================================================================*/
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    background: #141b52;
+    box-shadow: 0 5px 8px -4px #fe3b3b;
+    z-index: 9999;
+}
+
+nav ul li {
+    text-align: center;
+    margin-left: 2px;
+}
+
+nav ul li.active a {
+    color: #fe3b3b !important;
+}
+
+nav ul li a {
+    font-family: 'shaiful2';
+    font-size: 16px;
+    font-weight: 400;
+    color: #e9e9ea;
+}
+
+nav ul li:hover a {
+    color: #fe3b3b;
+}
+
+/*=======================================================================================
+                                    nav-part end
+=========================================================================================*/
 
 /*=======================================================================================
                                     header-part start
 =========================================================================================*/
-#header-part {
-    position: fixed;
-    width: 100%;
-    height: auto !important;
-    background: #0f0f0f;
-    top: 0;
-    left: 0;
-    z-index: 5;
+
+#header {
+    position: relative;
+    margin-top: 50px;
+    background: transparent;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-#header-part .header {
-    width: 720px;
+#header .header {
+    padding: 30px 0 40px 0;
+}
+
+#header .header .img {
+    width: 150px;
     margin: auto;
-    padding: 10px 0 30px 0;
 }
 
-#header-part .header .text h1 {
-    font-family: 'shaiful', serif;
-    font-size: 45px;
-    font-weight: 400;
-    color: #997105;
-    letter-spacing: 3px;
-    margin-bottom: 10px !important;
-}
-
-#header-part .header .text .element,
-#header-part .header .text .typed-cursor {
-    display: inline-block;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    color: bisque;
-}
-
-#header-part .header .img {
-    width: 100px;
-    margin-left: auto;
-}
-
-#header-part .header .img img {
+#header .header .img img {
     width: 100%;
-    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-    border: 2px solid #997105;
+    background: #e9e9ea;
     border-radius: 50%;
 }
 
+#header .header .icon,
+#header .header .text,
+#header .header .button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#header .header .icon a i {
+    width: 35px;
+    height: 35px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #e9e9ea;
+    margin: 0 2px 5px 2px;
+    background: linear-gradient(#090e36, #fe3b3b);
+    transition: .6s;
+}
+
+#header .header .icon a i:hover {
+    border-radius: 50%;
+    transition: .6s;
+}
+
+#header .header .text p {
+    font-family: 'shaiful2';
+    font-size: 22px;
+    font-weight: 400;
+    color: #e9e9ea;
+    margin-bottom: 5px !important;
+}
+
+#header .header .text .element,
+#header .header .text .typed-cursor {
+    display: inline-block;
+    font-family: 'shaiful2';
+    font-size: 22px;
+    font-weight: 600;
+    color: #fe3b3b;
+}
+
+#header .header .text .typed-cursor {
+    color: #e9e9ea !important;
+}
+
+#header .header .button a {
+    font-family: 'shaiful2';
+    font-size: 18px;
+    font-weight: 400;
+    color: #e9e9ea;
+    padding: 10px 20px;
+    margin: 0 2px;
+    border-radius: 25px;
+    background: linear-gradient(#090e36, #fe3b3b);
+    transition: .6s;
+}
+
+#header .header .button a:hover {
+    color: #090e36;
+    background: linear-gradient(#e9e9ea, #fe3b3b);
+    transition: .6s;
+}
+
 #particles-js {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    height: 145px;
-    background: transparent;
-    z-index: 9;
+    background: #090e36;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: -1;
 }
 
 /*=======================================================================================
@@ -124,226 +212,37 @@ hr {
 =========================================================================================*/
 
 /*=======================================================================================
-                                    banner-part start
-=========================================================================================*/
-#banner-part {
-    background: url(../images/body/body-text-dark.jpg) #242424;
-    border-bottom: 1px solid #0f0f0f;
-    height: 50px !important;
-    position: fixed;
-    width: 100%;
-    top: 115px;
-    left: 0;
-    z-index: 99;
-}
-
-#banner-part .banner {
-    position: fixed;
-    width: 100%;
-}
-
-#banner-part .banner .overlay {
-    width: 720px;
-    margin: auto;
-}
-
-#banner-part .banner .overlay .left {
-    display: flex;
-    margin-top: 10px;
-}
-
-#banner-part .banner .overlay .left a {
-    font-family: 'Crimson Text', serif;
-    font-size: 15px;
-    color: #333;
-    font-weight: bold;
-    border: 1px solid #dba500;
-    border-radius: 2px;
-    padding: 5px;
-    margin-right: 10px;
-    background: linear-gradient(#ffe788, #ffce38);
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-#banner-part .banner .overlay .left a i {
-    margin-right: 5px;
-}
-
-#banner-part .banner .overlay .right {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#banner-part .banner .overlay .social a i {
-    border: 1px solid #dba500;
-    border-radius: 2px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    margin-top: 10px;
-    margin-right: 5px;
-    font-size: 14px;
-    color: #333;
-    font-weight: 400;
-    display: inline-block;
-    background: linear-gradient(#ffe788, #ffce38);
-    -moz-border-radius: 2px;
-    -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-#banner-part .banner .overlay .logo {
-    width: 100px;
-    margin-right: 10px;
-}
-
-#banner-part .banner .overlay .logo img {
-    width: 100%;
-    margin-top: 5px;
-}
-
-#banner-part .banner .overlay .left a:hover {
-    background: linear-gradient(#ffe788, #ffe788);
-    background-color: #ffeca0;
-}
-
-#banner-part .banner .overlay .social a i:hover {
-    background: linear-gradient(#ffe788, #ffe788);
-    background-color: #ffeca0;
-}
-
-/*=======================================================================================
-                                    banner-part end
-=========================================================================================*/
-
-/*=======================================================================================
-                                    navbar-part start
-=========================================================================================*/
-nav ul {
-    display: block !important;
-    position: fixed;
-    top: 220px;
-    text-align: right;
-    width: 170px;
-}
-
-nav ul a {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    color: #a9a9a9;
-}
-
-nav ul a:hover {
-    color: #999;
-    transition: .6s;
-}
-
-nav ul li a:focus {
-    color: #997105;
-    font-weight: bold;
-}
-
-/*=======================================================================================
-                                    navbar-part end
-=========================================================================================*/
-
-#main {
-    width: 750px;
-    padding: 30px 30px 50px 30px;
-    margin: auto;
-    margin-top: 160px;
-    position: relative;
-    background: url(../images/body/body-text-dark.jpg);
-    border-radius: 3px;
-    border: 1px solid #0f0f0f;
-    height: auto !important;
-}
-
-/*=======================================================================================
                                     about-part start
 =========================================================================================*/
 
-#main .about .article p {
+#about .about {
+    padding: 30px 60px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+}
+
+#about .about .left {
+    width: 70%;
+    margin: auto;
+}
+
+#about .about .left img {
+    width: 100%;
+    border: 1px solid #fe3b3b;
+    border-radius: 5px;
+}
+
+#about .about .right p {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    color: #a9a9a9;
+    color: #090e36;
     text-align: justify;
-    width: 522px;
 }
 
-#main .about .article .moretext {
-    display: none;
-}
-
-#main .about .article .moretext a {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    color: #997105;
-}
-
-#main .about .moreless-button {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: brown;
-    cursor: pointer;
-}
-
-#main .about .details {
-    margin-top: 10px !important;
-    width: 350px;
-}
-
-#main .about .details i {
-    font-size: 16px;
-    color: #997105;
-}
-
-#main .about .details span {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #a9a9a9;
-    margin-left: 10px;
-}
-
-#main .about .details h5 {
-    color: #fff;
-}
-
-#main .about .details h5 span {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 30px;
-}
-
-#main .about .interest h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 26px;
-    font-weight: 400;
-    color: #997105;
-    text-transform: capitalize;
-    margin-top: 30px;
-}
-
-#main .about .interest i {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #997105;
-}
-
-#main .about .interest span {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    color: #a9a9a9;
-    margin-left: 10px;
+#about .about .right .color:hover {
+    color: #fe3b3b;
+    font-weight: bold;
 }
 
 /*=======================================================================================
@@ -354,15 +253,23 @@ nav ul li a:focus {
                                     expertise-part start
 =========================================================================================*/
 
-#main .expertise .progress-title {
+#expertise .expertise {
+    position: relative;
+    background: #090e36;
+    padding: 30px 60px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+}
+
+#expertise .expertise .progress-title {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
-    color: #a9a9a9;
+    color: #e9e9ea;
     transition: .6s;
     margin: 0 0 25px;
 }
 
-#main .expertise .progress {
+#expertise .expertise .progress {
     height: 10px;
     background: #e9e9ea;
     border-radius: 15px;
@@ -371,8 +278,8 @@ nav ul li a:focus {
     position: relative;
 }
 
-#main .expertise .progress:before,
-.progress:after {
+#expertise .expertise .progress:before,
+#expertise .progress:after {
     content: "";
     width: 20px;
     height: 20px;
@@ -384,13 +291,13 @@ nav ul li a:focus {
     z-index: 1;
 }
 
-#main .expertise .progress:after {
+#expertise .expertise .progress:after {
     border: 7px solid #e9e9ea;
     left: auto;
     right: 0;
 }
 
-#main .expertise .progress .progress-bar {
+#expertise .expertise .progress .progress-bar {
     background: gray;
     transition: .6s;
     box-shadow: none;
@@ -402,7 +309,7 @@ nav ul li a:focus {
     animation: animate-positive 1s;
 }
 
-#main .expertise .progress .progress-value {
+#expertise .expertise .progress .progress-value {
     width: 80px;
     height: 30px;
     line-height: 20px;
@@ -416,74 +323,74 @@ nav ul li a:focus {
     z-index: 2;
 }
 
-#main .expertise .progress.pink:before {
+#expertise .expertise .progress.pink:before {
     border: 7px solid #ec0c7e;
 }
 
-#main .expertise .progress.orange:before {
+#expertise .expertise .progress.orange:before {
     border: 7px solid #fe3b3b;
 }
 
-#main .expertise .progress.blue:before {
+#expertise .expertise .progress.blue:before {
     border: 7px solid #1a4966;
 }
 
-#main .expertise .progress.golden:before {
+#expertise .expertise .progress.golden:before {
     border: 7px solid #967200;
 }
 
-#main .expertise .progress.green:before {
+#expertise .expertise .progress.green:before {
     border: 7px solid #53aa2c;
 }
 
-#main .expertise .progress.purple:before {
+#expertise .expertise .progress.purple:before {
     border: 7px solid #66406f;
 }
 
-#main .expertise .progress.maroon:before {
+#expertise .expertise .progress.maroon:before {
     border: 7px solid #b03060;
 }
 
-#main .expertise .progress.turquoise:before {
+#expertise .expertise .progress.turquoise:before {
     border: 7px solid #40e0d0;
 }
 
-#main .expertise .progress.pink .progress-value {
+#expertise .expertise .progress.pink .progress-value {
     border: 5px solid #ec0c7e;
     color: #ec0c7e;
 }
 
-#main .expertise .progress.orange .progress-value {
+#expertise .expertise .progress.orange .progress-value {
     border: 5px solid #fe3b3b;
     color: #fe3b3b;
 }
 
-#main .expertise .progress.blue .progress-value {
+#expertise .expertise .progress.blue .progress-value {
     border: 5px solid #1a4966;
     color: #1a4966;
 }
 
-#main .expertise .progress.golden .progress-value {
+#expertise .expertise .progress.golden .progress-value {
     border: 5px solid #967200;
     color: #967200;
 }
 
-#main .expertise .progress.green .progress-value {
+#expertise .expertise .progress.green .progress-value {
     border: 5px solid #53aa2c;
     color: #53aa2c;
 }
 
-#main .expertise .progress.purple .progress-value {
+#expertise .expertise .progress.purple .progress-value {
     border: 5px solid #66406f;
     color: #66406f;
 }
 
-#main .expertise .progress.maroon .progress-value {
+#expertise .expertise .progress.maroon .progress-value {
     border: 5px solid #b03060;
     color: #b03060;
 }
 
-#main .expertise .progress.turquoise .progress-value {
+#expertise .expertise .progress.turquoise .progress-value {
     border: 5px solid #40e0d0;
     color: #40e0d0;
 }
@@ -505,235 +412,116 @@ nav ul li a:focus {
 =========================================================================================*/
 
 /*=======================================================================================
-                                    works-part start
+                                    recent-part start
 =========================================================================================*/
-
-#main .works a .image {
-    margin: 20px 0;
-    height: 350px;
-    cursor: pointer;
-    background-position: top;
-    transition: ease-in-out 4s;
+#recent .recent {
+    padding: 30px 60px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 5px;
 }
 
-#main .works a .image.image1 {
-    background: url(../images/works/Gyan.jpg);
+#recent .recent a .image {
+    margin: 20px 40px;
+    height: 250px;
+    cursor: pointer;
+    background-position: top;
+    transition: ease-in-out 4s;
+    border: 1px solid #fe3b3b;
+    border-radius: 5px;
+}
+
+#recent .recent a .image.image1 {
+    background: url(../images/recent/Gyan.jpg);
     background-size: cover;
 }
 
-#main .works a .image.image2 {
-    background: url(../images/works/Hunt.jpg);
+#recent .recent a .image.image2 {
+    background: url(../images/recent/Hunt.jpg);
     background-size: cover;
 }
 
-#main .works a .image.image3 {
-    background: url(../images/works/acg.png);
+#recent .recent a .image.image3 {
+    background: url(../images/recent/acg.png);
     background-size: cover;
 }
 
-#main .works a .image.image4 {
-    background: url(../images/works/Limolight.jpg);
+#recent .recent a .image.image4 {
+    background: url(../images/recent/Limolight.jpg);
     background-size: cover;
 }
 
-#main .works a .image:hover {
+#recent .recent a .image:hover {
     background-position: bottom;
 }
 
 /*=======================================================================================
-                                    works-part end
-=========================================================================================*/
-
-/*=======================================================================================
-                                    offer-part start
-=========================================================================================*/
-#main .offer .content {
-    border-bottom-left-radius: 40px;
-    padding: 20px;
-    border-left: 1px solid #daa520;
-}
-
-#main .offer .content i {
-    border: 1px solid #daa520;
-    padding: 15px;
-    border-radius: 10px;
-    color: #997105;
-    font-size: 20px;
-}
-
-#main .offer .content h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    color: #997105;
-    text-transform: capitalize;
-    margin-top: 10px;
-}
-
-#main .offer .content p {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #a9a9a9;
-    text-align: justify;
-    margin-top: 20px;
-}
-
-#main .offer .content p .recentworks {
-    color: sandybrown;
-}
-
-/*=======================================================================================
-                                    offer-part end
-=========================================================================================*/
-
-/*=======================================================================================
-                                    client-part start
-=========================================================================================*/
-#main .testimonials-wrapper {
-    max-width: 700px;
-    margin: auto;
-}
-
-#main .testimonial-item {
-    padding: 0 20px 20px;
-}
-
-.testimonial-item .thumb {
-    border-radius: 50%;
-    overflow: hidden;
-    height: 90px;
-    width: 90px;
-}
-
-#main .testi .testimonial-item .thumb img {
-    width: 100%;
-}
-
-#main .testi .testimonial-item h4 {
-    font-family: 'Crimson Text', serif;
-    font-size: 24px;
-    font-weight: 400;
-    color: #a9a9a9;
-}
-
-#main .testi .testimonial-item span {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: #997105;
-}
-
-#main .testi .testimonial-item p {
-    padding: 20px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #a9a9a9;
-}
-
-#main .testimonial-item .subtitle {
-    color: #8B88B1;
-    font-size: 14px;
-}
-
-#main .testimonial-item p {
-    font-size: 16px;
-}
-
-#main .testi .slick-initialized .slick-slide {
-    outline: 0;
-}
-
-#main .testi ul {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#main .testi ul li {
-    display: inline-block;
-    margin-left: 10px;
-}
-
-#main .testi ul li button {
-    font-size: 0;
-    width: 15px;
-    height: 7px;
-    border: 1px solid #d4d4ff;
-    border-radius: 5px;
-    background: transparent;
-    cursor: pointer;
-    outline: none;
-}
-
-#main .testi ul .slick-active button {
-    background: #a9a9a9;
-    border: 1px solid #997105;
-    width: 20px;
-}
-
-/*=======================================================================================
-                                    client-part end
+                                    recent-part end
 =========================================================================================*/
 
 /*=======================================================================================
                                     certification-part start
 =========================================================================================*/
+#certificate .certificate {
+    background: #090e36;
+    padding: 30px 60px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+}
 
-#main .certificate h2 {
+#certificate .certificate h2 {
+    margin: auto;
     margin-top: 20px;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #a9a9a9;
+    color: #e9e9ea;
 }
 
-#main .certificate h2 i {
-    color: yellow;
+#certificate .certificate h2 i {
+    color: #fe3b3b;
 }
 
-#main .certificate .middle {
+#certificate .certificate .middle {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#main .certificate .frame {
+#certificate .certificate .frame {
     position: relative;
-    margin: 20px 0 30px 0;
+    margin: 20px 0;
 }
 
-#main .certificate .tall {
-    height: 282px;
+#certificate .certificate .tall {
+    height: 400px;
 }
 
-#main .certificate .frame img {
+#certificate .certificate .frame img {
     width: 100%;
     height: 100%;
     display: block;
 }
 
-#main .certificate .frame .img {
+#certificate .certificate .frame .img {
     position: absolute;
-    top: 32px;
-    left: 32px;
-    width: 135px;
-    height: 108px;
+    top: 46px;
+    left: 46px;
+    width: 196px;
+    height: 157px;
 }
 
-#main .certificate .frame .wd {
-    height: 178px;
-    top: 52px;
+#certificate .certificate .frame .wd {
+    top: 73px;
+    left: 49px;
+    height: 254px;
+    width: 212px;
 }
 
-#main .certificate .frame .img .overlay {
+#certificate .certificate .frame .img .overlay {
     width: 100%;
     height: 100%;
-    background: rgba(218, 165, 32, .7);
+    background: rgba(254, 59, 59, .7);
     border: 5px solid rgba(255, 255, 255, .5);
     transform: scale(0);
     position: absolute;
@@ -745,20 +533,18 @@ nav ul li a:focus {
     transition: .8s;
 }
 
-#main .certificate .frame .img .overlay i {
-    color: #ffffff;
+#certificate .certificate .frame .img .overlay i {
+    color: #e9e9ea;
     font-size: 30px;
 }
 
-#main .certificate .frame:hover .overlay {
+#certificate .certificate .frame:hover .overlay {
     transform: scale(1);
 }
 
 .vbox-figlio {
     border: 5px solid goldenrod;
 }
-
-
 
 /*=======================================================================================
                                     certification-part end
@@ -768,30 +554,32 @@ nav ul li a:focus {
                                     contact-part start
 =========================================================================================*/
 
-#main .contact {
-    padding: 40px 0 20px 0;
+#contact .contact {
+    padding: 40px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
     position: relative;
     overflow: hidden;
 }
 
-#main .contact .formbox form {
+#contact .contact .formbox form {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
-#main .contact .formbox form .inputbox {
+#contact .contact .formbox form .inputbox {
     position: relative;
     margin-bottom: 40px;
 }
 
-#main .contact .formbox form .inputbox:last-child {
+#contact .contact .formbox form .inputbox:last-child {
     margin-bottom: 0px;
 }
 
-#main .contact .formbox form .inputbox input,
-#main .contact .formbox form .inputbox textarea {
+#contact .contact .formbox form .inputbox input,
+#contact .contact .formbox form .inputbox textarea {
     position: relative;
     background: transparent;
     outline: none;
@@ -803,16 +591,16 @@ nav ul li a:focus {
     resize: none;
 }
 
-#main .contact .formbox form .inputbox textarea {
+#contact .contact .formbox form .inputbox textarea {
     height: 100px;
 }
 
-#main .contact .formbox form .inputbox input[type="submit"] {
+#contact .contact .formbox form .inputbox input[type="submit"] {
     padding: 8px 20px;
     margin-top: -10px;
     width: 100px;
     cursor: pointer;
-    background: -webkit-linear-gradient(120deg, #9bda2b, #ffcc00);
+    background: -webkit-linear-gradient(120deg, #e9e9ea, #fe3b3b);
     color: #0056b3;
     font-family: 'Crimson Text', serif;
     font-size: 18px;
@@ -824,12 +612,12 @@ nav ul li a:focus {
     border-top-right-radius: 10px;
 }
 
-#main .contact .formbox form .inputbox input[type="submit"]:focus {
+#contact .contact .formbox form .inputbox input[type="submit"]:focus {
     background: #ffcc00;
     color: #111;
 }
 
-#main .contact .formbox form .inputbox span {
+#contact .contact .formbox form .inputbox span {
     position: absolute;
     left: 0;
     font-size: 16px;
@@ -840,28 +628,28 @@ nav ul li a:focus {
     transition: all 0.2s;
 }
 
-#main .contact .formbox form .inputbox input:focus~span,
-#main .contact .formbox form .inputbox textarea:focus~span,
-#main .contact .formbox form .inputbox input:valid~span,
-#main .contact .formbox form .inputbox textarea:valid~span {
+#contact .contact .formbox form .inputbox input:focus~span,
+#contact .contact .formbox form .inputbox textarea:focus~span,
+#contact .contact .formbox form .inputbox input:valid~span,
+#contact .contact .formbox form .inputbox textarea:valid~span {
     transform: translateY(-24px);
     color: #997105;
     font-size: 14px;
 }
 
-#main .contact .formbox form .inputbox input:focus,
-#main .contact .formbox form .inputbox textarea:focus {
+#contact .contact .formbox form .inputbox input:focus,
+#contact .contact .formbox form .inputbox textarea:focus {
     border-bottom: 2px solid #997105;
 }
 
-#main .contact .imgbox {
+#contact .contact .imgbox {
     position: relative;
     height: 100%;
     overflow: hidden;
     border-radius: 0 5px 5px 0;
 }
 
-#main .contact .imgbox:before {
+#contact .contact .imgbox:before {
     content: '';
     position: absolute;
     top: 0;
@@ -873,7 +661,7 @@ nav ul li a:focus {
     transform: skewX(-20deg);
 }
 
-#main .contact .imgbox img {
+#contact .contact .imgbox img {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -887,29 +675,23 @@ nav ul li a:focus {
 /*=======================================================================================
                                     footer-part start
 =========================================================================================*/
+#footer {
+    background: #090e36;
+    padding: 25px 0;
+    margin-top: 40px;
+    box-shadow: 0 -7px 5px -3px #ccc;
+}
 
-footer span {
+#footer .footer p {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #a9a9a9;
-    line-height: 1;
-    width: 220px;
-    position: fixed;
-    bottom: 3px;
-    text-align: right;
-    padding-right: 55px;
+    font-size: 18px;
+    text-align: center;
+    color: #e9e9ea;
 }
 
-footer span a {
-    font-family: 'Tangerine', cursive;
-    font-size: 28px;
+#footer .footer a:hover {
+    color: #fe3b3b;
     font-weight: bold;
-    color: #997105;
-}
-
-footer span a:hover {
-    color: #daa520;
 }
 
 /*=======================================================================================
