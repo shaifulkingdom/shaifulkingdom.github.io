@@ -1,0 +1,699 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: shaiful;
+    src: url(../css/Chomsky.otf)
+}
+
+@font-face {
+    font-family: shaiful1;
+    src: url(../font/MonteCarlo-Regular.ttf);
+}
+
+@font-face {
+    font-family: shaiful2;
+    src: url(../font/Philosopher-Regular.ttf);
+}
+
+
+
+.color {
+    color: #fe3b3b;
+}
+
+.title h1 {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'shaiful1';
+    font-size: 48px;
+    font-weight: 600;
+    color: #fe3b3b;
+    text-transform: capitalize;
+    text-shadow: -3px 2px 0px #cccccc;
+}
+
+.title h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 260px;
+    bottom: 15px;
+    height: 2px;
+    transform: translateX(-50%);
+    background: #fe3b3b;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px #ccc;
+
+}
+
+/*=======================================================================================
+                                    nav-part start
+=========================================================================================*/
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    background: #141b52;
+    box-shadow: 0 5px 8px -4px #fe3b3b;
+    z-index: 9999;
+}
+
+nav ul li {
+    text-align: center;
+    margin-left: 2px;
+}
+
+nav ul li.active a {
+    color: #fe3b3b !important;
+}
+
+nav ul li a {
+    font-family: 'shaiful2';
+    font-size: 16px;
+    font-weight: 400;
+    color: #e9e9ea;
+}
+
+nav ul li:hover a {
+    color: #fe3b3b;
+}
+
+/*=======================================================================================
+                                    nav-part end
+=========================================================================================*/
+
+/*=======================================================================================
+                                    header-part start
+=========================================================================================*/
+
+#header {
+    position: relative;
+    margin-top: 50px;
+    background: transparent;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#header .header {
+    padding: 30px 0 40px 0;
+}
+
+#header .header .img {
+    width: 150px;
+    margin: auto;
+}
+
+#header .header .img img {
+    width: 100%;
+    background: #e9e9ea;
+    border-radius: 50%;
+}
+
+#header .header .icon,
+#header .header .text,
+#header .header .button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#header .header .icon a i {
+    width: 35px;
+    height: 35px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #e9e9ea;
+    margin: 0 2px 5px 2px;
+    background: linear-gradient(#090e36, #fe3b3b);
+    transition: .6s;
+}
+
+#header .header .icon a i:hover {
+    border-radius: 50%;
+    transition: .6s;
+}
+
+#header .header .text p {
+    font-family: 'shaiful2';
+    font-size: 22px;
+    font-weight: 400;
+    color: #e9e9ea;
+    margin-bottom: 5px !important;
+}
+
+#header .header .text .element,
+#header .header .text .typed-cursor {
+    display: inline-block;
+    font-family: 'shaiful2';
+    font-size: 22px;
+    font-weight: 600;
+    color: #fe3b3b;
+}
+
+#header .header .text .typed-cursor {
+    color: #e9e9ea !important;
+}
+
+#header .header .button a {
+    font-family: 'shaiful2';
+    font-size: 18px;
+    font-weight: 400;
+    color: #e9e9ea;
+    padding: 10px 20px;
+    margin: 0 2px;
+    border-radius: 25px;
+    background: linear-gradient(#090e36, #fe3b3b);
+    transition: .6s;
+}
+
+#header .header .button a:hover {
+    color: #090e36;
+    background: linear-gradient(#e9e9ea, #fe3b3b);
+    transition: .6s;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #090e36;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: -1;
+}
+
+/*=======================================================================================
+                                    header-part end
+=========================================================================================*/
+
+/*=======================================================================================
+                                    about-part start
+=========================================================================================*/
+
+#about .about {
+    padding: 30px 60px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+}
+
+#about .about .left {
+    width: 70%;
+    margin: auto;
+}
+
+#about .about .left img {
+    width: 100%;
+    border: 1px solid #fe3b3b;
+    border-radius: 5px;
+}
+
+#about .about .right p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #090e36;
+    text-align: justify;
+}
+
+#about .about .right .color:hover {
+    color: #fe3b3b;
+    font-weight: bold;
+}
+
+/*=======================================================================================
+                                    about-part end
+=========================================================================================*/
+
+/*=======================================================================================
+                                    expertise-part start
+=========================================================================================*/
+
+#expertise .expertise {
+    position: relative;
+    background: #090e36;
+    padding: 30px 60px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+}
+
+#expertise .expertise .progress-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: #e9e9ea;
+    transition: .6s;
+    margin: 0 0 25px;
+}
+
+#expertise .expertise .progress {
+    height: 10px;
+    background: #e9e9ea;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    overflow: visible;
+    position: relative;
+}
+
+#expertise .expertise .progress:before,
+#expertise .progress:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 1;
+}
+
+#expertise .expertise .progress:after {
+    border: 7px solid #e9e9ea;
+    left: auto;
+    right: 0;
+}
+
+#expertise .expertise .progress .progress-bar {
+    background: gray;
+    transition: .6s;
+    box-shadow: none;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    overflow: visible;
+    -webkit-animation: animate-positive 1s;
+    animation: animate-positive 1s;
+}
+
+#expertise .expertise .progress .progress-value {
+    width: 80px;
+    height: 30px;
+    line-height: 20px;
+    border-radius: 20px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    z-index: 2;
+}
+
+#expertise .expertise .progress.pink:before {
+    border: 7px solid #ec0c7e;
+}
+
+#expertise .expertise .progress.orange:before {
+    border: 7px solid #fe3b3b;
+}
+
+#expertise .expertise .progress.blue:before {
+    border: 7px solid #1a4966;
+}
+
+#expertise .expertise .progress.golden:before {
+    border: 7px solid #967200;
+}
+
+#expertise .expertise .progress.green:before {
+    border: 7px solid #53aa2c;
+}
+
+#expertise .expertise .progress.purple:before {
+    border: 7px solid #66406f;
+}
+
+#expertise .expertise .progress.maroon:before {
+    border: 7px solid #b03060;
+}
+
+#expertise .expertise .progress.turquoise:before {
+    border: 7px solid #40e0d0;
+}
+
+#expertise .expertise .progress.pink .progress-value {
+    border: 5px solid #ec0c7e;
+    color: #ec0c7e;
+}
+
+#expertise .expertise .progress.orange .progress-value {
+    border: 5px solid #fe3b3b;
+    color: #fe3b3b;
+}
+
+#expertise .expertise .progress.blue .progress-value {
+    border: 5px solid #1a4966;
+    color: #1a4966;
+}
+
+#expertise .expertise .progress.golden .progress-value {
+    border: 5px solid #967200;
+    color: #967200;
+}
+
+#expertise .expertise .progress.green .progress-value {
+    border: 5px solid #53aa2c;
+    color: #53aa2c;
+}
+
+#expertise .expertise .progress.purple .progress-value {
+    border: 5px solid #66406f;
+    color: #66406f;
+}
+
+#expertise .expertise .progress.maroon .progress-value {
+    border: 5px solid #b03060;
+    color: #b03060;
+}
+
+#expertise .expertise .progress.turquoise .progress-value {
+    border: 5px solid #40e0d0;
+    color: #40e0d0;
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+/*=======================================================================================
+                                    expertise-part end
+=========================================================================================*/
+
+/*=======================================================================================
+                                    recent-part start
+=========================================================================================*/
+#recent .recent {
+    padding: 30px 60px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+}
+
+#recent .recent a .image {
+    margin: 20px 40px;
+    height: 250px;
+    cursor: pointer;
+    background-position: top;
+    transition: ease-in-out 4s;
+    border: 1px solid #fe3b3b;
+    border-radius: 5px;
+}
+
+#recent .recent a .image.image1 {
+    background: url(../images/recent/Gyan.jpg);
+    background-size: cover;
+}
+
+#recent .recent a .image.image2 {
+    background: url(../images/recent/Hunt.jpg);
+    background-size: cover;
+}
+
+#recent .recent a .image.image3 {
+    background: url(../images/recent/acg.png);
+    background-size: cover;
+}
+
+#recent .recent a .image.image4 {
+    background: url(../images/recent/Limolight.jpg);
+    background-size: cover;
+}
+
+#recent .recent a .image:hover {
+    background-position: bottom;
+}
+
+/*=======================================================================================
+                                    recent-part end
+=========================================================================================*/
+
+/*=======================================================================================
+                                    certification-part start
+=========================================================================================*/
+#certificate .certificate {
+    background: #090e36;
+    padding: 30px 60px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+}
+
+#certificate .certificate h2 {
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #e9e9ea;
+}
+
+#certificate .certificate h2 i {
+    color: #fe3b3b;
+}
+
+#certificate .certificate .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#certificate .certificate .frame {
+    position: relative;
+    margin: 20px 0;
+}
+
+#certificate .certificate .tall {
+    height: 400px;
+}
+
+#certificate .certificate .frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#certificate .certificate .frame .img {
+    position: absolute;
+    top: 46px;
+    left: 46px;
+    width: 196px;
+    height: 157px;
+}
+
+#certificate .certificate .frame .wd {
+    top: 73px;
+    left: 49px;
+    height: 254px;
+    width: 212px;
+}
+
+#certificate .certificate .frame .img .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(254, 59, 59, .7);
+    border: 5px solid rgba(255, 255, 255, .5);
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+}
+
+#certificate .certificate .frame .img .overlay i {
+    color: #e9e9ea;
+    font-size: 30px;
+}
+
+#certificate .certificate .frame:hover .overlay {
+    transform: scale(1);
+}
+
+.vbox-figlio {
+    border: 5px solid goldenrod;
+}
+
+/*=======================================================================================
+                                    certification-part end
+=========================================================================================*/
+
+/*=======================================================================================
+                                    contact-part start
+=========================================================================================*/
+
+#contact .contact {
+    padding: 40px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact .contact .formbox form {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#contact .contact .formbox form .inputbox {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#contact .contact .formbox form .inputbox:last-child {
+    margin-bottom: 0px;
+}
+
+#contact .contact .formbox form .inputbox input,
+#contact .contact .formbox form .inputbox textarea {
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #a9a9a9;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #a9a9a9;
+    resize: none;
+}
+
+#contact .contact .formbox form .inputbox textarea {
+    height: 100px;
+}
+
+#contact .contact .formbox form .inputbox input[type="submit"] {
+    padding: 8px 20px;
+    margin-top: -10px;
+    width: 100px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(120deg, #e9e9ea, #fe3b3b);
+    color: #0056b3;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#contact .contact .formbox form .inputbox input[type="submit"]:focus {
+    background: #ffcc00;
+    color: #111;
+}
+
+#contact .contact .formbox form .inputbox span {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: 400;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: #a9a9a9;
+    transition: all 0.2s;
+}
+
+#contact .contact .formbox form .inputbox input:focus~span,
+#contact .contact .formbox form .inputbox textarea:focus~span,
+#contact .contact .formbox form .inputbox input:valid~span,
+#contact .contact .formbox form .inputbox textarea:valid~span {
+    transform: translateY(-24px);
+    color: #997105;
+    font-size: 14px;
+}
+
+#contact .contact .formbox form .inputbox input:focus,
+#contact .contact .formbox form .inputbox textarea:focus {
+    border-bottom: 2px solid #997105;
+}
+
+#contact .contact .imgbox {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0 5px 5px 0;
+}
+
+#contact .contact .imgbox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(120deg, #9bda2b, #ffcc00);
+    transform-origin: bottom;
+    transform: skewX(-20deg);
+}
+
+#contact .contact .imgbox img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+}
+
+/*=======================================================================================
+                                    contact-part end
+=========================================================================================*/
+
+/*=======================================================================================
+                                    footer-part start
+=========================================================================================*/
+#footer {
+    background: #090e36;
+    padding: 25px 0;
+    margin-top: 40px;
+    box-shadow: 0 -7px 5px -3px #ccc;
+}
+
+#footer .footer p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #e9e9ea;
+}
+
+#footer .footer a:hover {
+    color: #fe3b3b;
+    font-weight: bold;
+}
+
+/*=======================================================================================
+                                    footer-part end
+=========================================================================================*/

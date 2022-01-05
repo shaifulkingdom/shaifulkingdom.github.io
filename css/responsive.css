@@ -1,0 +1,242 @@
+@media (min-width: 300px) and (max-width: 575.98px) {
+    .title h1 {
+        font-size: 34px;
+    }
+
+    .title h1::after {
+        width: 200px;
+    }
+
+    nav .navbar-toggler-icon i {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        color: #fe3b3b;
+    }
+
+    #header {
+        margin-top: 48px;
+    }
+
+    #header .header .img {
+        width: 130px;
+    }
+
+    #header .header .text p,
+    #header .header .text .element,
+    #header .header .text .typed-cursor {
+        font-size: 18px;
+    }
+
+    #about .about {
+        padding: 20px 10px;
+    }
+
+    #about .about .left {
+        width: 180px;
+    }
+
+    #expertise .expertise {
+        padding: 20px 15px;
+    }
+
+    #expertise .expertise .progress-title {
+        font-size: 16px;
+    }
+
+    #recent .recent {
+        padding: 20px 10px;
+    }
+
+    #recent .recent a .image {
+        margin: 10px 0;
+        height: 200px;
+    }
+
+    #certificate .certificate {
+        padding: 20px 10px;
+    }
+
+    #certificate .certificate h2,
+    #certificate .certificate .frame {
+        width: 250px;
+    }
+
+    #certificate .certificate .frame .img {
+        top: 40px;
+        left: 40px;
+        width: 170px;
+        height: 136px;
+    }
+
+    #certificate .certificate .tall {
+        height: unset;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .title h1 {
+        font-size: 34px;
+    }
+
+    .title h1::after {
+        width: 200px;
+    }
+
+    nav .navbar-toggler-icon i {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        color: #fe3b3b;
+    }
+
+    #header {
+        margin-top: 48px;
+    }
+
+    #header .header .img {
+        width: 130px;
+    }
+
+    #header .header .text p,
+    #header .header .text .element,
+    #header .header .text .typed-cursor {
+        font-size: 18px;
+    }
+
+    #about .about {
+        padding: 20px 10px;
+    }
+
+    #about .about .left {
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #expertise .expertise {
+        padding: 20px 15px;
+    }
+
+    #expertise .expertise .progress-title {
+        font-size: 16px;
+    }
+
+    #recent .recent {
+        padding: 20px 10px;
+    }
+
+    #recent .recent a .image {
+        margin: 10px 0;
+        height: 200px;
+    }
+
+    #certificate .certificate {
+        padding: 20px 10px;
+    }
+
+    #certificate .certificate h2 {
+        width: 380px;
+    }
+
+    #certificate .certificate .frame .img {
+        top: 46px;
+        left: 46px;
+        width: 196px;
+        height: 157px;
+    }
+
+    #certificate .certificate .tall {
+        height: unset;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .title h1 {
+        font-size: 34px;
+    }
+
+    .title h1::after {
+        width: 200px;
+    }
+
+    nav .navbar-toggler-icon i {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        color: #fe3b3b;
+    }
+
+    #header {
+        margin-top: 48px;
+    }
+
+    #about .about .left {
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #recent .recent a .image {
+        margin: 10px 0;
+        height: 300px;
+    }
+
+    #certificate .certificate {
+        padding: 20px 10px;
+    }
+
+    #certificate .certificate .frame .img {
+        top: 33px;
+        left: 33px;
+        width: 138px;
+        height: 110px;
+    }
+
+    #certificate .certificate .frame .wd {
+        top: 41px;
+        height: 138px;
+    }
+
+    #certificate .certificate .tall {
+        height: 220px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .title h1::after {
+        width: 240px;
+    }
+
+    #recent .recent a .image {
+        margin: 10px 0;
+        height: 300px;
+    }
+
+
+    #certificate .certificate .frame .img {
+        top: 40px;
+        left: 40px;
+        width: 170px;
+        height: 136px;
+    }
+
+    #certificate .certificate .frame .wd {
+        top: 51px;
+        height: 178px;
+    }
+
+    #certificate .certificate .tall {
+        height: 280px;
+    }
+}
